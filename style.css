@@ -199,59 +199,76 @@ main {
     top: 0;
     right: -30%;
 }
-/*TABLET RESPONSIVE*/
-@media(max-width:1300px){
-    header{
-        padding: 1rem 0.5rem;
-    }
-    .content{
-        margin-top: 85%;
-    }
-    .robot-3d{
-        scale: 0.8;
-        top: -20%;
-        right:2%;
-    }
-}
-/*MOBILE RESPONSIVE*/
-@media(max-width:768px){
-    header{
-        padding: 1rem 0.1rem;
-    }
-    nav{
-        display:none;
-    }
+/* TABLET RESPONSIVE */
+@media (max-width: 1024px) {
+  header {
+    padding: 1rem;
+  }
 
-    header h1{
-        font-size: 25rem;
-    }
-    .content{
-        margin-top: 25rem;
-    }
-    .robot-3d{
-        scale: 0.5;
-        top: -25%;
-        right: 0;
-    }
-    .content{
-        max-width: 30rem;
-        margin-left: 10%;
-    }
-    .tag-box{
-        width:12rem;
-    }
-    .content h1{
-        font-size: 2.5rem;
-    }
-    .description{
-        font-size: 1rem;
-    }
-    .btn-get-started{
-        font-size: 0.8rem;
-        padding: 0.5rem 1.2rem;
-    }
-    .btn-signing-main{
-        font-size: 0.8rem;
-        padding: 0.8rem 2rem;
-    }
+  .content {
+    margin-top: 8rem;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .robot-3d {
+    width: 60%;
+    max-width: 400px;
+    top: -10%;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  header {
+    padding: 0.8rem;
+  }
+
+  nav {
+    display: none;
+  }
+
+  header h1 {
+    font-size: 2rem; /* FIXED */
+    text-align: center;
+  }
+
+  .content {
+    margin-top: 6rem;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .robot-3d {
+    width: 75%;
+    max-width: 280px;
+    top: -15%;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .tag-box {
+    width: auto;
+    padding: 0.5rem 1rem;
+  }
+
+  .content h1 {
+    font-size: 2.2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .btn-get-started,
+  .btn-signing-main {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.5rem;
+  }
 }
